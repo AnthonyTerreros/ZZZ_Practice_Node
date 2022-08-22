@@ -1,0 +1,36 @@
+{
+	"model": {
+		"type": "Object",
+		"value": {
+			"id": {
+				"type": "incrementNumber",
+				"options": {
+					"from": 1
+				}
+			},
+            "cuidad": {
+                "type": "faker",
+                "value": "address.city"
+            },
+			"pisos": {
+				"type": "randomNumberBetween",
+				"value": [1, 5]
+			},
+            "fechadecompra": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["2000-01-01", "2022-12-30"]
+			},
+            "createdAt": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["2000-01-01", "2022-12-30"]
+			},
+            "updatedAt": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["2000-01-01", "2022-12-30"]
+			}
+		}
+	}
+}
